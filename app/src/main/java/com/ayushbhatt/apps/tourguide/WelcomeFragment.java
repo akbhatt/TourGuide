@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class WelcomeFragment extends Fragment {
@@ -21,11 +22,18 @@ public class WelcomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_welcome, container, false);
+        final View welcomeView = inflater.inflate(R.layout.fragment_welcome, container, false);
+
+
+        TextView toAttractions = welcomeView.findViewById(R.id.toAttractionsFragment);
+        toAttractions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "This Works!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        return welcomeView;
+    }
     }
 
-    TextView toAttractions = (TextView) getView().findViewById(R.id.toAttractionsFragment);
-
-
-
-}

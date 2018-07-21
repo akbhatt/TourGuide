@@ -32,6 +32,7 @@
             android:maxWidth="1024dp"
             android:src="@drawable/detroit_welcome_image"
             android:scaleType="fitXY"
+            android:layout_margin="@dimen/min_dimen"
             android:contentDescription="@string/welcome_image_description"/>
 
         <TextView
@@ -43,6 +44,7 @@
             android:textSize="@dimen/tabs_navigation_titles_size"
             android:background="@color/attraction_orange"
             android:textColor="@color/justWhite"
+            android:layout_margin="@dimen/min_dimen"
             android:padding="@dimen/min_dimen"/>
 
         <TextView
@@ -54,6 +56,7 @@
             android:textSize="@dimen/tabs_navigation_titles_size"
             android:background="@color/food_blue"
             android:textColor="@color/bitGold"
+            android:layout_margin="@dimen/min_dimen"
             android:padding="@dimen/min_dimen"/>
 
         <TextView
@@ -65,6 +68,7 @@
             android:textSize="@dimen/tabs_navigation_titles_size"
             android:background="@color/transport_pink"
             android:textColor="@color/justWhite"
+            android:layout_margin="@dimen/min_dimen"
             android:padding="@dimen/min_dimen"/>
 
         <TextView
@@ -76,6 +80,7 @@
             android:textSize="@dimen/tabs_navigation_titles_size"
             android:background="@color/radio_green"
             android:textColor="@color/pureBlack"
+            android:layout_margin="@dimen/min_dimen"
             android:padding="@dimen/min_dimen"/>
 
     </LinearLayout>
