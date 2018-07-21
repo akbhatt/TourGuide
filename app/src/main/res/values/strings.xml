@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TourGuide</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_text">Welcome to the Detroit Tour Guide App!</string>
+    <string name="welcome_image_description">Detroit GM Building</string>
+    <string name="atttractions">Attractions</string>
+    <string name="food">Food</string>
+    <string name="transport">Getting Around</string>
+    <string name="radio">Radio Stations</string>
+
+</resources>

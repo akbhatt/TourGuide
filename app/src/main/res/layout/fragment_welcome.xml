@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeFragmentScrollLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment"
+    android:background="@color/primaryBlue">
+
+    <LinearLayout
+        android:id="@+id/welcomeFragmentLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primaryBlue">
+
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_text"
+            android:textAlignment="center"
+            android:textColor="@color/justWhite"
+            android:textSize="@dimen/title_font_size"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/welcomeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxWidth="1024dp"
+            android:src="@drawable/detroit_welcome_image"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/welcome_image_description"/>
+
+        <TextView
+            android:id="@+id/toAttractionsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/atttractions"
+            android:textAlignment="center"
+            android:textSize="@dimen/tabs_navigation_titles_size"
+            android:background="@color/attraction_orange"
+            android:textColor="@color/justWhite"
+            android:padding="@dimen/min_dimen"/>
+
+        <TextView
+            android:id="@+id/toFoodFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/food"
+            android:textAlignment="center"
+            android:textSize="@dimen/tabs_navigation_titles_size"
+            android:background="@color/food_blue"
+            android:textColor="@color/bitGold"
+            android:padding="@dimen/min_dimen"/>
+
+        <TextView
+            android:id="@+id/toGettingAroundFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transport"
+            android:textAlignment="center"
+            android:textSize="@dimen/tabs_navigation_titles_size"
+            android:background="@color/transport_pink"
+            android:textColor="@color/justWhite"
+            android:padding="@dimen/min_dimen"/>
+
+        <TextView
+            android:id="@+id/toRadioStationsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio"
+            android:textAlignment="center"
+            android:textSize="@dimen/tabs_navigation_titles_size"
+            android:background="@color/radio_green"
+            android:textColor="@color/pureBlack"
+            android:padding="@dimen/min_dimen"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pureBlack">#000000</color>
+    <color name="justWhite">#FFFFFF</color>
+    <color name="primaryBlue">#0D47A1</color>
+    <color name="bitGold">#FFE600</color>
+    <color name="attraction_orange">#FF6400</color>
+    <color name="food_blue">#505582</color>
+    <color name="transport_pink">#FF1EBE</color>
+    <color name="radio_green">#32FF0A</color>
+</resources>
