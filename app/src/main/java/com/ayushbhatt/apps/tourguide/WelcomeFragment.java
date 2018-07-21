@@ -24,8 +24,8 @@ public class WelcomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_welcome, container, false);
     }
 
-    TextView textView = (TextView) getView().findViewById(R.id.toAttractionsFragment);
-    
+    TextView toAttractions = (TextView) getView().findViewById(R.id.toAttractionsFragment);
+
 
 
 }
