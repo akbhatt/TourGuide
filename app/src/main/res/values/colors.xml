@@ -11,4 +11,5 @@
     <color name="food_blue">#505582</color>
     <color name="transport_pink">#FF1EBE</color>
     <color name="radio_green">#32FF0A</color>
+    <color name="attraction_list_background">#0F1ED2</color>
 </resources>

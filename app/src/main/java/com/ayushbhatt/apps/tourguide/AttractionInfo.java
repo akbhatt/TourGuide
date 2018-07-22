@@ -26,7 +26,8 @@ public class AttractionInfo {
         attractionWebsite = attWebsite;
     }
 
-    //get methods
+    //all the get methods
+
     public String getAttractionName() {
         return attractionName;
     }

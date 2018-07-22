@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ public class WelcomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View welcomeView = inflater.inflate(R.layout.fragment_welcome, container, false);
 
-        TextView history = welcomeView.findViewById(R.id.detroitHistory);
+        final TextView history = welcomeView.findViewById(R.id.detroitHistory);
         history.setText(R.string.history_text);
 
         //toast to direct people to visit different tabs
@@ -31,6 +32,15 @@ public class WelcomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getActivity(), "Click on the tabs above to learn more about Detroit!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //small easter egg, please ignore
+        ImageView imageView = welcomeView.findViewById(R.id.welcomeImageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Made with ❤ from Detroit!", Toast.LENGTH_LONG).show();
             }
         });
 
