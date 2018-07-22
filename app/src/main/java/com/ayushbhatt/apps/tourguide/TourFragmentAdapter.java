@@ -13,7 +13,7 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -23,6 +23,8 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
                 return new WelcomeFragment();
             case 1:
                 return new AttractionsFragment();
+            case 2:
+                return new FoodFragment();
             default:
                 return null;
         }
@@ -36,6 +38,8 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
                 return "Welcome!";
             case 1:
                 return "Attractions!";
+            case 2:
+                return "Food!";
             default:
                 return null;
         }
