@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class WelcomeFragment extends Fragment {
@@ -24,6 +25,16 @@ public class WelcomeFragment extends Fragment {
 
         TextView history = welcomeView.findViewById(R.id.detroitHistory);
         history.setText(R.string.history_text);
+
+        //toast to direct people to visit different tabs
+        history.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Click on the tabs above to learn more about Detroit!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
         return welcomeView;
     }
 }

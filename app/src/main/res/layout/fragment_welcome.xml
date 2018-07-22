@@ -4,14 +4,14 @@
     android:id="@+id/welcomeFragmentScrollLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primaryBlue"
+    android:background="@color/bitGold"
     tools:context=".WelcomeFragment">
 
     <LinearLayout
         android:id="@+id/welcomeFragmentLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/primaryBlue"
+        android:background="@color/bitGold"
         android:orientation="vertical">
 
 
@@ -22,17 +22,18 @@
             android:padding="10dp"
             android:text="@string/welcome_text"
             android:textAlignment="center"
-            android:textColor="@color/justWhite"
+            android:textColor="@color/pureBlack"
             android:textSize="@dimen/title_font_size" />
 
         <ImageView
             android:id="@+id/welcomeImageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_margin="@dimen/min_dimen"
             android:contentDescription="@string/welcome_image_description"
             android:maxWidth="1024dp"
             android:scaleType="fitXY"
+            android:layout_marginEnd="@dimen/min_dimen"
+            android:layout_marginStart="@dimen/min_dimen"
             android:src="@drawable/detroit_welcome_image" />
 
         <TextView
