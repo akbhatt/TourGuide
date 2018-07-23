@@ -5,7 +5,7 @@
     <dimen name="min_dimen">5dp</dimen>
     <dimen name="nano_dimen">2dp</dimen>
     <dimen name="history_text_size">18sp</dimen>
-    <dimen name="list_image_height_dimen">125dp</dimen>
-    <dimen name="list_image_width_dimen">125dp</dimen>
+    <dimen name="list_image_height_dimen">100dp</dimen>
+    <dimen name="list_image_width_dimen">100dp</dimen>
     <dimen name="list_views_padding">10dp</dimen>
 </resources>

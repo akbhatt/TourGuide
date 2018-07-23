@@ -14,50 +14,67 @@
         android:layout_height="wrap_content"
         android:autoLink="web"
         android:paddingTop="@dimen/nano_dimen"
+        android:textColor="@color/justWhite"
         android:textSize="@dimen/list_items_titles_size"
         tools:text="Attraction Name" />
 
-    <ImageView
-        android:id="@+id/attractionsImageView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_image_height_dimen"
-        android:layout_below="@id/attractionsNameTextView"
-        android:layout_marginBottom="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginStart="5dp"
-        android:contentDescription="@string/attraction_image_cd"
-        android:scaleType="fitXY"
-        android:src="@drawable/detroit_welcome_image" />
-
-    <TextView
-        android:id="@+id/attractionsAddressTextView"
-        style="@style/AttractionsListTheme"
+    <LinearLayout
+        android:id="@+id/attractionsListHorizontalLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/attractionsImageView"
-        android:autoLink="map"
-        android:textSize="20sp"
-        tools:text="Address" />
+        android:layout_below="@+id/attractionsNameTextView"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/attractionsPhoneTextView"
-        style="@style/AttractionsListTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/attractionsAddressTextView"
-        android:autoLink="phone"
-        android:paddingBottom="1sp"
-        android:textSize="15sp"
-        tools:text="(123)456-789" />
+        <ImageView
+            android:id="@+id/attractionsImageView"
+            android:layout_width="@dimen/list_image_width_dimen"
+            android:layout_height="@dimen/list_image_height_dimen"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/attraction_image_cd"
+            android:scaleType="fitXY"
+            android:src="@drawable/detroit_welcome_image" />
 
-    <TextView
-        android:id="@+id/attractionsWebsiteTextView"
-        style="@style/AttractionsListTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/attractionsPhoneTextView"
-        android:autoLink="web"
-        android:textSize="15sp"
-        tools:text="attractions.com" />
+        <LinearLayout
+            android:id="@+id/attractionsListVerticalLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/attractionsAddressTextView"
+                style="@style/AttractionsListTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="map"
+                android:paddingBottom="0dp"
+                android:textColorLink="@color/bitGold"
+                android:textSize="20sp"
+                tools:text="Address" />
+
+            <TextView
+                android:id="@+id/attractionsPhoneTextView"
+                style="@style/AttractionsListTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:paddingBottom="1sp"
+                android:textSize="15sp"
+                tools:text="(123)456-789" />
+
+            <TextView
+                android:id="@+id/attractionsWebsiteTextView"
+                style="@style/AttractionsListTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textSize="15sp"
+                tools:text="attractions.com" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
