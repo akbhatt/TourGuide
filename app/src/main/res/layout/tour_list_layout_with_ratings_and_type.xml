@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tourListRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/attraction_list_background"
+    android:padding="@dimen/nano_dimen">
+
+    <TextView
+        android:id="@+id/tourNameTextView"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:paddingTop="@dimen/nano_dimen"
+        android:textColor="@color/justWhite"
+        android:textSize="@dimen/list_items_titles_size"
+        tools:text="Tour Object Name" />
+
+    <RatingBar
+        android:id="@+id/tourRatingBar"
+        style="@style/TourListTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tourNameTextView"
+        android:background="@color/attraction_list_background"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="@color/bitGold"
+        android:rating="2"
+        android:stepSize="0.1" />
+
+    <ImageView
+        android:id="@+id/tourImageView"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_image_height_dimen"
+        android:layout_below="@id/tourRatingBar"
+        android:contentDescription="@string/attraction_image_cd"
+        android:scaleType="fitXY"
+        android:src="@drawable/detroit_welcome_image" />
+
+    <TextView
+        android:id="@+id/tourAddressTextView"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tourImageView"
+        android:autoLink="map"
+        android:paddingBottom="0dp"
+        android:textColorLink="@color/bitGold"
+        android:textSize="20sp"
+        tools:text="Address" />
+
+    <TextView
+        android:id="@+id/tourPhoneTextView"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tourAddressTextView"
+        android:autoLink="phone"
+        android:paddingBottom="1sp"
+        android:textSize="15sp"
+        tools:text="(123) 456-789" />
+
+    <TextView
+        android:id="@+id/tourWebsiteTextView"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tourPhoneTextView"
+        android:autoLink="web"
+        android:textSize="15sp"
+        tools:text="website.com" />
+
+    <TextView
+        android:id="@+id/tourObjectType"
+        style="@style/TourListTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourWebsiteTextView"
+        tools:text="Food Type" />
+
+</RelativeLayout>

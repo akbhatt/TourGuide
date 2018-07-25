@@ -11,5 +11,5 @@
     <string name="go_tigers"> Go Tigers! Go Lions! Go Red Wings!</string>
     <string name="history_text">History of Detroit: According to \'detroitmi.gov\', Detroit was incorporated as a city in 1815. Detroit is home to a rich mix of people from various ethnic backgrounds, including citizens of Italian, English, German, Polish, Irish, Mexican, Middle Eastern, African, and Greek descent. Today, Detroit is composed primarily of African Americans, Hispanics and Arab Americans. That racial diversity is reflected in areas such as Greektown, Mexicantown and Asian Village. Detroit played a key role in the industrialization of America throughout the 20th century, and is ready to transform itself as technologies develop into the 21st century.</string>
     <string name="attractions_welcome_text">This are some of the attractions Detroit is famous for!</string>
-    <string name="attraction_image_cd">Attraction image</string>
+    <string name="attraction_image_cd">Tour image</string>
 </resources>

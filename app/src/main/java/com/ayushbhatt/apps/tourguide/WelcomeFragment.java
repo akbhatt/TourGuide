@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,19 +30,9 @@ public class WelcomeFragment extends Fragment {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Click on the tabs above to learn more about Detroit!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Click on the tabs above to learn more about Detroit!", Toast.LENGTH_LONG).show();
             }
         });
-
-        //small easter egg, please ignore
-        ImageView imageView = welcomeView.findViewById(R.id.welcomeImageView);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Made with ❤ from Detroit!", Toast.LENGTH_LONG).show();
-            }
-        });
-
 
         return welcomeView;
     }

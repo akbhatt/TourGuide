@@ -20,7 +20,7 @@ public class AttractionsListAdapter extends ArrayAdapter<TourObject> {
     public View getView(int position, View convertView, ViewGroup parent) {
         //inflate the view if existing view is not reused
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.attraction_list_layout, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.tour_list_layout, parent, false);
         }
 
         class ViewHolder {
@@ -32,19 +32,19 @@ public class AttractionsListAdapter extends ArrayAdapter<TourObject> {
 
         ViewHolder holder = new ViewHolder();
 
-        holder.tObjectName = convertView.findViewById(R.id.attractionsNameTextView);
+        holder.tObjectName = convertView.findViewById(R.id.tourNameTextView);
         holder.tObjectName.setText(currentAttraction.getObjectName());
 
-        holder.tObjectImage = convertView.findViewById(R.id.attractionsImageView);
+        holder.tObjectImage = convertView.findViewById(R.id.tourImageView);
         holder.tObjectImage.setImageResource(currentAttraction.getObjectImageResourceID());
 
-        holder.tObjectAddress = convertView.findViewById(R.id.attractionsAddressTextView);
+        holder.tObjectAddress = convertView.findViewById(R.id.tourAddressTextView);
         holder.tObjectAddress.setText(currentAttraction.getObjectAddress());
 
-        holder.tObjectPhoneNumber = convertView.findViewById(R.id.attractionsPhoneTextView);
+        holder.tObjectPhoneNumber = convertView.findViewById(R.id.tourPhoneTextView);
         holder.tObjectPhoneNumber.setText(currentAttraction.getObjectPhoneNumber());
 
-        holder.tObjectWebsite = convertView.findViewById(R.id.attractionsWebsiteTextView);
+        holder.tObjectWebsite = convertView.findViewById(R.id.tourWebsiteTextView);
         holder.tObjectWebsite.setText(currentAttraction.getObjectWebsite());
 
         return convertView;
