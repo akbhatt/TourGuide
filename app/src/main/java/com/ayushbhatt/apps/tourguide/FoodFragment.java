@@ -31,7 +31,7 @@ public class FoodFragment extends Fragment {
         FoodPlace.add(new TourObject("Supino Pizzeria", 1, "2457 Russell St, Detroit, MI 48207", "(313) 567-7879", "supinopizzeria.com", "Ratings: 4.6/5", "Pizza"));
 
         TourListAdapterTwo foodAdapter = new TourListAdapterTwo(getActivity(), FoodPlace);
-        ListView foodListView = FoodFragmentView.findViewById(R.id.tourNameTextViewTwo);
+        ListView foodListView = FoodFragmentView.findViewById(R.id.foodListView);
         foodListView.setAdapter(foodAdapter);
 
         return FoodFragmentView;
