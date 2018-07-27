@@ -4,7 +4,7 @@
     android:id="@+id/tourListRelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/attraction_list_background"
+    android:background="@color/tour_list_background"
     android:padding="@dimen/nano_dimen">
 
     <TextView

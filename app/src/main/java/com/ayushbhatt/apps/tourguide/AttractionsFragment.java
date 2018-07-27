@@ -25,7 +25,7 @@ public class AttractionsFragment extends Fragment {
         attractions.add(new TourObject("Greektown Casino", R.drawable.attraction_greektown_casino, "555 East Lafayette Blvd, Detroit, MI 48226", "(313) 223-2999", "https://www.greektowncasino.com"));
         attractions.add(new TourObject("Detroit Zoo", R.drawable.attraction_detroit_zoo, "8450 W 10 Mile Rd, Royal Oak, MI 48067", "(248) 541-5717", "https://detroitzoo.org"));
 
-        AttractionsListAdapter attractionsAdapter = new AttractionsListAdapter(getActivity(), attractions);
+        TourListAdapter attractionsAdapter = new TourListAdapter(getActivity(), attractions);
         ListView attractionListView = attractionsView.findViewById(R.id.attractionsListView);
         attractionListView.setAdapter(attractionsAdapter);
 

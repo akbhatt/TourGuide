@@ -12,7 +12,7 @@
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/attraction_list_background"
+        android:background="@color/tour_list_background"
         android:text="@string/attractions_welcome_text"
         android:textColor="@color/justWhite"
         android:textSize="@dimen/history_text_size" />

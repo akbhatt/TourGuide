@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tourListRelativeLayout"
+    android:id="@+id/tourListRelativeLayoutTwo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/attraction_list_background"
+    android:background="@color/tour_list_background"
     android:padding="@dimen/nano_dimen">
 
     <TextView
-        android:id="@+id/tourNameTextView"
+        android:id="@+id/tourNameTextViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,35 +18,30 @@
         android:textSize="@dimen/list_items_titles_size"
         tools:text="Tour Object Name" />
 
-    <RatingBar
-        android:id="@+id/tourRatingBar"
+    <TextView
+        android:id="@+id/tourRatingsTextView"
         style="@style/TourListTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tourNameTextView"
-        android:background="@color/attraction_list_background"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:progressTint="@color/bitGold"
-        android:rating="2"
-        android:stepSize="0.1" />
+        android:layout_below="@id/tourNameTextViewTwo"
+        tools:text="Ratings: 2/4" />
 
     <ImageView
-        android:id="@+id/tourImageView"
+        android:id="@+id/tourImageViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_image_height_dimen"
-        android:layout_below="@id/tourRatingBar"
+        android:layout_below="@id/tourRatingsTextView"
         android:contentDescription="@string/attraction_image_cd"
         android:scaleType="fitXY"
         android:src="@drawable/detroit_welcome_image" />
 
     <TextView
-        android:id="@+id/tourAddressTextView"
+        android:id="@+id/tourAddressTextViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tourImageView"
+        android:layout_below="@id/tourImageViewTwo"
         android:autoLink="map"
         android:paddingBottom="0dp"
         android:textColorLink="@color/bitGold"
@@ -54,32 +49,32 @@
         tools:text="Address" />
 
     <TextView
-        android:id="@+id/tourPhoneTextView"
+        android:id="@+id/tourPhoneTextViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tourAddressTextView"
+        android:layout_below="@id/tourAddressTextViewTwo"
         android:autoLink="phone"
         android:paddingBottom="1sp"
         android:textSize="15sp"
         tools:text="(123) 456-789" />
 
     <TextView
-        android:id="@+id/tourWebsiteTextView"
+        android:id="@+id/tourWebsiteTextViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tourPhoneTextView"
+        android:layout_below="@id/tourPhoneTextViewTwo"
         android:autoLink="web"
         android:textSize="15sp"
         tools:text="website.com" />
 
     <TextView
-        android:id="@+id/tourObjectType"
+        android:id="@+id/tourObjectTypeTextView"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tourWebsiteTextView"
+        android:layout_below="@+id/tourWebsiteTextViewTwo"
         tools:text="Food Type" />
 
 </RelativeLayout>

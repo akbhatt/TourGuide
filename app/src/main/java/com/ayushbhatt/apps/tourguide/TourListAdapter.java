@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AttractionsListAdapter extends ArrayAdapter<TourObject> {
-    public AttractionsListAdapter(Activity context, ArrayList<TourObject> attractions) {
+public class TourListAdapter extends ArrayAdapter<TourObject> {
+    public TourListAdapter(Activity context, ArrayList<TourObject> attractions) {
         super(context, 0, attractions);
     }
 
@@ -28,24 +28,24 @@ public class AttractionsListAdapter extends ArrayAdapter<TourObject> {
             ImageView tObjectImage;
         }
 
-        TourObject currentAttraction = getItem(position);
+        TourObject currentTourObject = getItem(position);
 
         ViewHolder holder = new ViewHolder();
 
         holder.tObjectName = convertView.findViewById(R.id.tourNameTextView);
-        holder.tObjectName.setText(currentAttraction.getObjectName());
+        holder.tObjectName.setText(currentTourObject.getObjectName());
 
         holder.tObjectImage = convertView.findViewById(R.id.tourImageView);
-        holder.tObjectImage.setImageResource(currentAttraction.getObjectImageResourceID());
+        holder.tObjectImage.setImageResource(currentTourObject.getObjectImageResourceID());
 
         holder.tObjectAddress = convertView.findViewById(R.id.tourAddressTextView);
-        holder.tObjectAddress.setText(currentAttraction.getObjectAddress());
+        holder.tObjectAddress.setText(currentTourObject.getObjectAddress());
 
         holder.tObjectPhoneNumber = convertView.findViewById(R.id.tourPhoneTextView);
-        holder.tObjectPhoneNumber.setText(currentAttraction.getObjectPhoneNumber());
+        holder.tObjectPhoneNumber.setText(currentTourObject.getObjectPhoneNumber());
 
         holder.tObjectWebsite = convertView.findViewById(R.id.tourWebsiteTextView);
-        holder.tObjectWebsite.setText(currentAttraction.getObjectWebsite());
+        holder.tObjectWebsite.setText(currentTourObject.getObjectWebsite());
 
         return convertView;
     }

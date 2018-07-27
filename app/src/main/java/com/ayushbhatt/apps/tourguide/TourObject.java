@@ -18,7 +18,7 @@ public class TourObject {
     private String tObjectWebsite;
 
     //rating bar stars count for food places list from Google Maps
-    private Double tObjectRatings;
+    private String tObjectRatings;
 
     //type of the object, whether it's a food type or music type
     private String tObjectType;
@@ -33,7 +33,7 @@ public class TourObject {
     }
 
     //constructor for objects with ratings and type
-    public TourObject(String objectName, int objectImageResourceID, String objectAddress, String objectPhoneNumber, String objectWebsite, Double objectRatings, String objectType) {
+    public TourObject(String objectName, int objectImageResourceID, String objectAddress, String objectPhoneNumber, String objectWebsite, String objectRatings, String objectType) {
         tObjectName = objectName;
         tObjectImageResourceID = objectImageResourceID;
         tObjectAddress = objectAddress;
@@ -69,7 +69,7 @@ public class TourObject {
         return tObjectType;
     }
 
-    public Double getObjectRatings() {
+    public String getObjectRatings() {
         return tObjectRatings;
     }
 }
