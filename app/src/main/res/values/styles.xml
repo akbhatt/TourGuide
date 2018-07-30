@@ -15,4 +15,12 @@
         <item name="android:textColor">@color/bitGold</item>
     </style>
 
+    <style name="TourListWithNameWebsiteTypeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/pureBlack</item>
+        <item name="android:background">@color/radio_green</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:padding">@dimen/min_dimen</item>
+        <item name="android:textColorLink">@color/justWhite</item>
+    </style>
+
 </resources>

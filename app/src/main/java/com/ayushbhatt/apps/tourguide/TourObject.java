@@ -43,6 +43,13 @@ public class TourObject {
         tObjectType = objectType;
     }
 
+    //constructor for transport layout
+    public TourObject(String objectName, String objectWebsite, String objectType) {
+        tObjectName = objectName;
+        tObjectWebsite = objectWebsite;
+        tObjectType = objectType;
+    }
+
     //all the get methods
 
     public String getObjectName() {

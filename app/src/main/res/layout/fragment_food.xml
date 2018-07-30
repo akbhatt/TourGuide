@@ -6,9 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".FoodFragment">
 
+    <TextView
+        android:id="@+id/foodFragmentWelcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/food_blue"
+        android:text="@string/food_welcome_text"
+        android:textSize="@dimen/history_text_size"
+        android:theme="@style/TourListTheme" />
+
     <ListView
         android:id="@+id/foodListView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/foodFragmentWelcomeTextView" />
 
 </RelativeLayout>

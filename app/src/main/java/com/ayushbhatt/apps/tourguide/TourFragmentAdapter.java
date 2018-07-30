@@ -1,6 +1,5 @@
 package com.ayushbhatt.apps.tourguide;
 
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -13,7 +12,7 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Override
@@ -25,12 +24,13 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
                 return new AttractionsFragment();
             case 2:
                 return new FoodFragment();
+            case 3:
+                return new TransportFragment();
             default:
                 return null;
         }
     }
 
-    @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
         switch (position){
@@ -40,10 +40,8 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
                 return "Attractions!";
             case 2:
                 return "Food!";
-            /*case 3:
+            case 3:
                 return "Transport!";
-            case 4:
-                return "Radio!";*/
             default:
                 return null;
         }

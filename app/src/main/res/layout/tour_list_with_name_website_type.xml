@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tourListWithNameWebsiteTypeMainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tourListWithNameWebsiteTypeNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TourListWithNameWebsiteTypeTheme"
+        tools:text="Transport Name" />
+
+    <TextView
+        android:id="@+id/tourListWithNameWebsiteTypeWebsiteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourListWithNameWebsiteTypeNameTextView"
+        android:autoLink="web"
+        android:background="@color/attraction_orange"
+        android:textSize="18sp"
+        android:theme="@style/TourListWithNameWebsiteTypeTheme"
+        tools:text="website.com" />
+
+    <TextView
+        android:id="@+id/tourListWithNameWebsiteTypeTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tourListWithNameWebsiteTypeWebsiteTextView"
+        android:background="@color/colorAccent"
+        android:textSize="16sp"
+        android:theme="@style/TourListWithNameWebsiteTypeTheme"
+        tools:text="Type" />
+
+</RelativeLayout>
