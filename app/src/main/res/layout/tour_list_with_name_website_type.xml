@@ -9,6 +9,7 @@
         android:id="@+id/tourListWithNameWebsiteTypeNameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/attraction_orange"
         android:theme="@style/TourListWithNameWebsiteTypeTheme"
         tools:text="Transport Name" />
 
@@ -18,8 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tourListWithNameWebsiteTypeNameTextView"
         android:autoLink="web"
-        android:background="@color/attraction_orange"
-        android:textSize="18sp"
+        android:textSize="15sp"
         android:theme="@style/TourListWithNameWebsiteTypeTheme"
         tools:text="website.com" />
 
@@ -28,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tourListWithNameWebsiteTypeWebsiteTextView"
-        android:background="@color/colorAccent"
         android:textSize="16sp"
         android:theme="@style/TourListWithNameWebsiteTypeTheme"
         tools:text="Type" />
