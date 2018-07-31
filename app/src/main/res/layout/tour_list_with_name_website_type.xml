@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tourListWithNameWebsiteTypeMainRelativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/food_blue">
 
     <TextView
         android:id="@+id/tourListWithNameWebsiteTypeNameTextView"
@@ -25,11 +26,12 @@
 
     <TextView
         android:id="@+id/tourListWithNameWebsiteTypeTypeTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tourListWithNameWebsiteTypeWebsiteTextView"
         android:textSize="16sp"
         android:theme="@style/TourListWithNameWebsiteTypeTheme"
+        android:background="@color/transport_pink"
         tools:text="Type" />
 
 </RelativeLayout>

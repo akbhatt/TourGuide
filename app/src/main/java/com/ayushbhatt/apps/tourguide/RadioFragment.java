@@ -33,7 +33,7 @@ public class RadioFragment extends Fragment {
         RadioStations.add(new TourObject("760 WJR AM", "www.wjr.com", "News/Talk"));
         RadioStations.add(new TourObject("950 WWJ AM", "http://player.radio.com/listen/station/wwj-newsradio-950", "News"));
 
-        TourListAdapter radioAdapter = new TourListAdapter(getActivity(), RadioStations);
+        TourListAdapterThree radioAdapter = new TourListAdapterThree(getActivity(), RadioStations);
         ListView radioListView = radioView.findViewById(R.id.radioFragmentListView);
         radioListView.setAdapter(radioAdapter);
 
