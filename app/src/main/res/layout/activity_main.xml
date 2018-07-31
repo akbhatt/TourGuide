@@ -16,6 +16,8 @@
         app:tabIndicatorColor="@color/justWhite"
         app:tabIndicatorHeight="@dimen/min_dimen"
         app:tabSelectedTextColor="@color/bitGold"
+        android:layout_gravity="center_horizontal"
+        app:tabMode="scrollable"
         app:tabTextColor="@color/justWhite" />
 
 
