@@ -14,4 +14,5 @@
     <string name="attraction_image_cd">Tour image</string>
     <string name="food_welcome_text">These are some of the famous food places in downtown Detroit! Ratings are from Google Maps.</string>
     <string name="transport_welcome_text">These are some of the transport options you will find helpful when you will visit the city of Detroit!</string>
+    <string name="radio_welcome_text">These are some of the radio stations you can hear in Detroit!</string>
 </resources>
