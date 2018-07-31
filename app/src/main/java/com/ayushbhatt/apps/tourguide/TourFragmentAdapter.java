@@ -41,7 +41,7 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
             case 2:
                 return "Food!";
             case 3:
-                return "Transport!";
+                return "Getting Around!";
             default:
                 return null;
         }
