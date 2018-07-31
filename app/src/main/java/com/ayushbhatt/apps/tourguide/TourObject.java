@@ -33,9 +33,8 @@ public class TourObject {
     }
 
     //constructor for objects with ratings and type
-    public TourObject(String objectName, int objectImageResourceID, String objectAddress, String objectPhoneNumber, String objectWebsite, String objectRatings, String objectType) {
+    public TourObject(String objectName, String objectAddress, String objectPhoneNumber, String objectWebsite, String objectRatings, String objectType) {
         tObjectName = objectName;
-        tObjectImageResourceID = objectImageResourceID;
         tObjectAddress = objectAddress;
         tObjectPhoneNumber = objectPhoneNumber;
         tObjectWebsite = objectWebsite;

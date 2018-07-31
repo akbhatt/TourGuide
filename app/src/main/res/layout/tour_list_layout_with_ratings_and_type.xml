@@ -29,22 +29,12 @@
         android:paddingBottom="0dp"
         tools:text="Ratings: 2/4" />
 
-    <ImageView
-        android:id="@+id/tourImageViewTwo"
-        style="@style/TourListTheme"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/list_image_height_dimen"
-        android:layout_below="@id/tourRatingsTextView"
-        android:contentDescription="@string/attraction_image_cd"
-        android:scaleType="fitXY"
-        android:src="@drawable/detroit_welcome_image" />
-
     <TextView
         android:id="@+id/tourAddressTextViewTwo"
         style="@style/TourListTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tourImageViewTwo"
+        android:layout_below="@id/tourRatingsTextView"
         android:autoLink="map"
         android:paddingBottom="0dp"
         android:textColorLink="@color/bitGold"

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,7 +24,6 @@ public class TourListAdapterTwo extends ArrayAdapter<TourObject> {
 
         class ViewHolder {
             TextView tObjectName2, tObjectAddress2, tObjectPhoneNumber2, tObjectWebsite2, tObjectType2, tObjectRatings2;
-            ImageView tObjectImage2;
         }
 
         TourObject currentTourObject = getItem(position);
@@ -34,9 +32,6 @@ public class TourListAdapterTwo extends ArrayAdapter<TourObject> {
 
         holder.tObjectName2 = convertView.findViewById(R.id.tourNameTextViewTwo);
         holder.tObjectName2.setText(currentTourObject.getObjectName());
-
-        holder.tObjectImage2 = convertView.findViewById(R.id.tourImageViewTwo);
-        holder.tObjectImage2.setImageResource(currentTourObject.getObjectImageResourceID());
 
         holder.tObjectAddress2 = convertView.findViewById(R.id.tourAddressTextViewTwo);
         holder.tObjectAddress2.setText(currentTourObject.getObjectAddress());
