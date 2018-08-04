@@ -18,12 +18,12 @@ public class AttractionsFragment extends Fragment {
         View attractionsView = inflater.inflate(R.layout.fragment_attractions, container, false);
         //create an array of attractions
         final ArrayList<TourObject> attractions = new ArrayList<>();
-        attractions.add(new TourObject("Belle Isle Park", R.drawable.attraction_belle_isle, "Belle Isle, Michigan", "(313) 331-7760", "https://www.belleisleconservancy.org"));
-        attractions.add(new TourObject("The Henry Ford", R.drawable.attraction_henry_ford_museum, "20900 Oakwood Blvd, Dearborn, MI 48124", "(313) 982-6001", "https://www.thehenryford.org"));
-        attractions.add(new TourObject("Renaissance Center", R.drawable.attraction_renaissance_center, "Detroit, MI 48243", "(313) 567-3126", "gmrencen.com"));
-        attractions.add(new TourObject("Detroit Institute of Arts", R.drawable.attraction_detroit_institute_of_arts, "5200 Woodward Ave, Detroit, MI 48202", "(313) 833-7900", "https://www.dia.org"));
-        attractions.add(new TourObject("Greektown Casino", R.drawable.attraction_greektown_casino, "555 East Lafayette Blvd, Detroit, MI 48226", "(313) 223-2999", "https://www.greektowncasino.com"));
-        attractions.add(new TourObject("Detroit Zoo", R.drawable.attraction_detroit_zoo, "8450 W 10 Mile Rd, Royal Oak, MI 48067", "(248) 541-5717", "https://detroitzoo.org"));
+        attractions.add(new TourObject(getString(R.string.attraction_belle_isle), R.drawable.attraction_belle_isle, getString(R.string.belle_isle_address), getString(R.string.belle_isle_phonenumber), getString(R.string.belle_isle_website)));
+        attractions.add(new TourObject(getString(R.string.attraction_henry_ford), R.drawable.attraction_henry_ford_museum, getString(R.string.henry_ford_address), getString(R.string.henry_ford_phonenumber), getString(R.string.henry_ford_website)));
+        attractions.add(new TourObject(getString(R.string.attraction_renaissance_center), R.drawable.attraction_renaissance_center, getString(R.string.renaissance_center_address), getString(R.string.renaissance_center_phonenumber), getString(R.string.renaissance_center_website)));
+        attractions.add(new TourObject(getString(R.string.attraction_dia), R.drawable.attraction_detroit_institute_of_arts, getString(R.string.dia_address), getString(R.string.dia_phonenumber), getString(R.string.dia_website)));
+        attractions.add(new TourObject(getString(R.string.attraction_greektown_casino), R.drawable.attraction_greektown_casino, getString(R.string.greektown_casino_address), getString(R.string.greektown_casino_phonenumber), getString(R.string.greektown_casino_website)));
+        attractions.add(new TourObject(getString(R.string.attraction_detroit_zoo), R.drawable.attraction_detroit_zoo, getString(R.string.detroit_zoo_address), getString(R.string.detroit_zoo_phonenumber), getString(R.string.detroit_zoo_website)));
 
         TourListAdapter attractionsAdapter = new TourListAdapter(getActivity(), attractions);
         ListView attractionListView = attractionsView.findViewById(R.id.attractionsListView);

@@ -24,14 +24,14 @@ public class RadioFragment extends Fragment {
         // Inflate the layout for this fragment
         View radioView = inflater.inflate(R.layout.fragment_radio, container, false);
         ArrayList<TourObject> RadioStations = new ArrayList<>();
-        RadioStations.add(new TourObject("95.5 WKQI FM", "https://channel955.iheart.com/", "Top-40"));
-        RadioStations.add(new TourObject("97.1 WXYT FM", "https://player.radio.com/listen/station/971-the-ticket", "Sports"));
-        RadioStations.add(new TourObject("98.7 AMP FM", "https://player.radio.com/listen/station/987-amp-radio", "Top-40"));
-        RadioStations.add(new TourObject("99.5 WYCD FM", "http://player.radio.com/listen/station/995-wycd", "Country"));
-        RadioStations.add(new TourObject("104.3 WOMC FM", "http://player.radio.com/listen/station/1043-womc-hd2", "Classic Hits"));
-        RadioStations.add(new TourObject("105.1 WMGC FM", "https://1051thebounce.com/", "Hip Hop"));
-        RadioStations.add(new TourObject("760 WJR AM", "www.wjr.com", "News/Talk"));
-        RadioStations.add(new TourObject("950 WWJ AM", "http://player.radio.com/listen/station/wwj-newsradio-950", "News"));
+        RadioStations.add(new TourObject(getString(R.string.radio_wkqi), getString(R.string.wkqi_website), getString(R.string.radio_type_tops)));
+        RadioStations.add(new TourObject(getString(R.string.radio_wxyt), getString(R.string.wxyt_website), getString(R.string.radio_type_sports)));
+        RadioStations.add(new TourObject(getString(R.string.radio_amp), getString(R.string.amp_website), getString(R.string.radio_type_tops)));
+        RadioStations.add(new TourObject(getString(R.string.radio_wycd), getString(R.string.wycd_website), getString(R.string.radio_type_country)));
+        RadioStations.add(new TourObject(getString(R.string.radio_womc), getString(R.string.womc_website), getString(R.string.radio_type_classic_hits)));
+        RadioStations.add(new TourObject(getString(R.string.radio_wmgc), getString(R.string.wmgc_website), getString(R.string.radio_type_hip_hop)));
+        RadioStations.add(new TourObject(getString(R.string.radio_wjr), getString(R.string.wjr_website), getString(R.string.radio_type_news_talk)));
+        RadioStations.add(new TourObject(getString(R.string.radio_wwj), getString(R.string.wwj_website), getString(R.string.radio_type_news)));
 
         TourListAdapterThree radioAdapter = new TourListAdapterThree(getActivity(), RadioStations);
         ListView radioListView = radioView.findViewById(R.id.radioFragmentListView);

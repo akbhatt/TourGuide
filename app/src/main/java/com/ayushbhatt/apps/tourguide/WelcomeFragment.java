@@ -30,7 +30,7 @@ public class WelcomeFragment extends Fragment {
         history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Click on the tabs above to learn more about Detroit!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), R.string.learn_about_detroit_toast, Toast.LENGTH_LONG).show();
             }
         });
 

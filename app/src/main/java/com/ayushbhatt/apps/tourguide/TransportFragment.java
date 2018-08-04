@@ -25,13 +25,13 @@ public class TransportFragment extends Fragment {
         // Inflate the layout for this fragment
         View transportView = inflater.inflate(R.layout.fragment_transport, container, false);
         ArrayList<TourObject> TransportObjects = new ArrayList<>();
-        TransportObjects.add(new TourObject("Detroit Department Of Transportation", "www.detroitmi.gov/How-Do-I/Locate-Transportation/Bus-Schedules", "City Bus"));
-        TransportObjects.add(new TourObject("Greyhound", "locations.greyhound.com/us/michigan/detroit", "Bus"));
-        TransportObjects.add(new TourObject("Enterprise Rent-A-Car", "https://www.enterprise.com", "Rental Car"));
-        TransportObjects.add(new TourObject("Hertz", "www.hertz.com", "Rental Car"));
-        TransportObjects.add(new TourObject("Detroit People Mover", "www.thepeoplemover.com/map.html", "Third Rail Train"));
-        TransportObjects.add(new TourObject("QLine", "https://qlinedetroit.com", "StreetCar"));
-        TransportObjects.add(new TourObject("Biking", "http://detroitgreenways.org/bike-map-and-parking", "Bike"));
+        TransportObjects.add(new TourObject(getString(R.string.transport_ddot), getString(R.string.ddot_website), getString(R.string.transport_type_city_bus)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_greyhound), getString(R.string.greyhound_website), getString(R.string.transport_type_bus)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_enterprise), getString(R.string.enterprise_website), getString(R.string.transport_type_rental_car)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_hertz), getString(R.string.hertz_website), getString(R.string.transport_type_rental_car)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_dpm), getString(R.string.dpm_website), getString(R.string.transport_type_third_rail)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_qline), getString(R.string.qline_website), getString(R.string.transport_type_street_car)));
+        TransportObjects.add(new TourObject(getString(R.string.transport_biking), getString(R.string.biking_website), getString(R.string.transport_type_bike)));
 
         TourListAdapterThree transportAdapter = new TourListAdapterThree(getActivity(), TransportObjects);
         ListView transportListView = transportView.findViewById(R.id.transportFragmentListView);
