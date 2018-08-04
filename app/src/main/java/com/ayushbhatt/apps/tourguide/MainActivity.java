@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         viewPager = findViewById(R.id.tourViewPager);
-        TourFragmentAdapter tourFragmentAdapter = new TourFragmentAdapter(getSupportFragmentManager());
+        TourFragmentAdapter tourFragmentAdapter = new TourFragmentAdapter(getSupportFragmentManager(), getApplicationContext());
+
         viewPager.setAdapter(tourFragmentAdapter);
 
         TabLayout tourTabs = findViewById(R.id.tourTabLayout);

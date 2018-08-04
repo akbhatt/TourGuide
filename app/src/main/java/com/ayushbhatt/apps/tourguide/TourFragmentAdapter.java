@@ -1,14 +1,26 @@
 package com.ayushbhatt.apps.tourguide;
 
-import android.content.res.Resources;
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+
 public class TourFragmentAdapter extends FragmentPagerAdapter {
 
-    public TourFragmentAdapter(FragmentManager fragmentManager) {
+    private Context mContext;
+    private String tabTitles[];
+
+    public TourFragmentAdapter(FragmentManager fragmentManager, Context context) {
         super(fragmentManager);
+        this.mContext = context;
+        tabTitles = new String[]{
+                mContext.getResources().getString(R.string.welcome),
+                mContext.getResources().getString(R.string.attractions),
+                mContext.getResources().getString(R.string.food),
+                mContext.getResources().getString(R.string.transport),
+                mContext.getResources().getString(R.string.radio)
+        };
     }
 
     @Override
@@ -34,22 +46,8 @@ public class TourFragmentAdapter extends FragmentPagerAdapter {
         }
     }
 
-
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0:
-                return Resources.getSystem().getString(R.string.welcome);
-            case 1:
-                return Resources.getSystem().getString(R.string.attractions);
-            case 2:
-                return Resources.getSystem().getString(R.string.food);
-            case 3:
-                return Resources.getSystem().getString(R.string.transport);
-            case 4:
-                return Resources.getSystem().getString(R.string.radio);
-            default:
-                return null;
-        }
+        return tabTitles[position];
     }
 }
